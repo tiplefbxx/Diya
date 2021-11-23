@@ -1,5 +1,5 @@
 import './sertificate.scss'
-import warning from '../../../texure/cards/warning.png'
+import warning from '../../../../texure/cards/warning.png'
 
 export const Sertificate = (props) => {
  return (

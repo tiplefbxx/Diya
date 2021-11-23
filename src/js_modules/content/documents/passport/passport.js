@@ -1,5 +1,5 @@
 import './passport.scss'
-import img from '../../../texure/testimg.jpg'
+import img from '../../../../texure/testimg.jpg'
 
 export const Passport = (props) => {
 

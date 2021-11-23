@@ -1,0 +1,38 @@
+.documents {
+    &__line {
+      margin-top:30px;
+    }
+
+    &__buttons {
+      position:absolute;
+      width:110%;
+      height:100%;
+      left:-5%;
+      display:flex;
+      justify-content:space-between;
+    }
+    &__buttons div {
+      z-index:10;
+      width:15%;
+      border:1px solid#000;
+      height:100%;  
+    }
+}
+
+.card {
+width:320px;
+background:white;
+height:380px;
+border-radius:7px;
+box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
+margin:0 0 0 20px;
+transform:scale(0.9);
+transition-duration: 0.4s;
+}
+.card__active {
+transform:unset;
+transition-duration: 0.4s;
+}
+.card__swippe {
+  padding:25px 0 0 0
+}
