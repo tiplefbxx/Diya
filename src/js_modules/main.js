@@ -4,14 +4,14 @@ import { Header } from './header/header'
 import { createRef } from 'react';
 import './main.scss'
 
+let appBodyRef = createRef()
 export const Main = (props) => {
-let backgroundRef = createRef()
 
  return (
- <div ref={backgroundRef} className="main__wrapper">
+ <div ref={appBodyRef} className="main__wrapper">
     <Header />
-    <Content />
-    <Footer backgroundRef={backgroundRef}/>
+    <Content appBodyRef={appBodyRef}/>
+    <Footer />
  </div>)
 }
 

@@ -1,28 +1,24 @@
-.message {
-width:90%;
-min-height:60px;
-background: #f1f6fa;
-border-radius:8px;
-    &__top {
-     padding:0 0 8px 0;
-     border-bottom: 2.5px solid #e2ecf4;
-    }
 
-    &__title {
-        font-size:10px;
-        color:#717679;
-        font-weight:500;
-        padding:7px 0 0 20px;
-        letter-spacing:0.3px;
-    }
 
-    &__bottom {
+.notification {
+background: #e2ecf4;
+margin:10px 0 0 0;
+height:120%;
 
-    }
+  &__content{
+      padding: 10px 0 0 0;
+      display:flex;
+      flex-direction:column;
+      row-gap:15px;
+      align-items:center;
+  }
+}
 
-    &__text {
-        padding:7px 0 0 11px;
-        color:#717679;
-        font-weight:500;
-    }
+
+.notification__background {
+display:flex;
+flex-direction:column;
+justify-content: center;
+height:100%;
+background: #c5d9e9;
 }

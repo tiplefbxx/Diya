@@ -9,7 +9,6 @@ import { createRef, useState } from 'react';
 
 
 export const Documents = (props) => {
-
 let [currentPosition, setCurrentPosition] = useState(1)
 
 const setActiveStyle = () => {
@@ -17,11 +16,9 @@ const setActiveStyle = () => {
    console.log(currentPosition)
 }
 
-
 const setNewPage = () => {
     console.log(slickNext)
 }
-
 
  let setting = {    
     beforeChange: setActiveStyle,
@@ -35,7 +32,6 @@ const setNewPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1
  }
-
 
 
  return (
