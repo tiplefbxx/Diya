@@ -9,16 +9,37 @@ import { NavLink } from 'react-router-dom'
 
 
 export const Footer = (props) => {
+    console.log('rerender')
 
  return (
   <footer className="footer">
-      <ul className="footer__list">
-          <NavLink to={''}><img src={documents} alt={''}></img></NavLink>
-          <NavLink to={'services'}><img src={services} alt={''}></img></NavLink>
-          <NavLink to={'/notification'}><img src={notification} alt={''}></img></NavLink>
-          <NavLink to={'/menu'}><img src={menu} alt={''}></img></NavLink>
+      <ul onClick={(e)=>changeBackground(props.backgroundRef, e)} className="footer__list">
+          <NavLink to={''} className="documents-link"><img src={documents} alt={''}></img></NavLink>
+          <NavLink to={'/services'} className="services-link"><img src={services} alt={''}></img></NavLink>
+          <NavLink to={'/notification'} className="notification-link"><img src={notification} alt={''}></img></NavLink>
+          <NavLink to={'/menu'} className="menu-link"><img src={menu} alt={''}></img></NavLink>
       </ul>
   </footer>
  )
 }
 
+
+const changeBackground = (backgroundRef, e) => {
+ let targetClass = e.target.className
+ 
+  switch(targetClass) {
+      case 'documents-link': 
+      return backgroundRef.current.className = "documents__background" 
+
+      case 'services-link': 
+      return  backgroundRef.current.className = "services__background" 
+
+      case 'notification-link': 
+      return ''
+ 
+      case 'menu-link': 
+      return ''
+
+      default: return
+  }
+}

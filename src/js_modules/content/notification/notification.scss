@@ -1,0 +1,28 @@
+.message {
+width:90%;
+min-height:60px;
+background: #f1f6fa;
+border-radius:8px;
+    &__top {
+     padding:0 0 8px 0;
+     border-bottom: 2.5px solid #e2ecf4;
+    }
+
+    &__title {
+        font-size:10px;
+        color:#717679;
+        font-weight:500;
+        padding:7px 0 0 20px;
+        letter-spacing:0.3px;
+    }
+
+    &__bottom {
+
+    }
+
+    &__text {
+        padding:7px 0 0 11px;
+        color:#717679;
+        font-weight:500;
+    }
+}

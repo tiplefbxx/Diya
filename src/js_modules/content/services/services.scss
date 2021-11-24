@@ -1,11 +1,11 @@
 .services {
-background: rgba(108, 144, 221, 0.5);
+background: #e2ecf4;
 margin:10px 0 0 0;
 height:120%;
   &__top {
    height:90px;
    padding:0 23px;
-   border-bottom: 1.5px solid rgba(108, 144, 221, 0.55);
+   border-bottom: 2.5px solid #d3e4ef;
   }
 
   &__title {
@@ -47,7 +47,7 @@ height:120%;
     & li {
         display:block;
         padding:17px 0 17px 0;
-        border-bottom: 1.5px solid rgba(108, 144, 221, 0.55);
+        border-bottom: 2.5px solid #d3e4ef;
         position:relative;
     }
     & span:nth-child(1) {
@@ -68,4 +68,14 @@ height:120%;
     }
   }
     
+}
+
+
+
+.services__background {
+display:flex;
+flex-direction:column;
+justify-content: center;
+height:100%;
+background: #c5d9e9;
 }

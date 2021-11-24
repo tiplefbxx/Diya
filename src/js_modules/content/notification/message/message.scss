@@ -1,0 +1,23 @@
+.notification {
+background: #e2ecf4;
+margin:10px 0 0 0;
+height:120%;
+
+  &__content{
+      padding: 20px 0 0 0;
+      display:flex;
+      flex-direction:column;
+      row-gap:15px;
+      align-items:center;
+  }
+}
+
+
+
+.notification__background {
+display:flex;
+flex-direction:column;
+justify-content: center;
+height:100%;
+background: #c5d9e9;
+}

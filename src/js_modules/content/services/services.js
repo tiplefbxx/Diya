@@ -9,7 +9,6 @@ import bagagge from '../../../texure/services/bagagge.png'
 
 export const Services = (props) => {
 
-
  return( 
    <div className="services">
      <div className="services__top">
