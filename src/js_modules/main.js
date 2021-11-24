@@ -6,7 +6,6 @@ import './main.scss'
 
 let appBodyRef = createRef()
 export const Main = (props) => {
-
  return (
  <div ref={appBodyRef} className="main__wrapper">
     <Header />
