@@ -9,11 +9,11 @@ import { NavLink } from 'react-router-dom'
 
 
 export const Footer = (props) => {
-    
+    console.log('rerender')
 
  return (
   <footer className="footer">
-      <ul  className="footer__list">
+      <ul onClick={(e)=>changeBackground(props.backgroundRef, e)} className="footer__list">
           <NavLink to={''} className="documents-link"><img src={documents} alt={''}></img></NavLink>
           <NavLink to={'/services'} className="services-link"><img src={services} alt={''}></img></NavLink>
           <NavLink to={'/notification'} className="notification-link"><img src={notification} alt={''}></img></NavLink>
@@ -23,3 +23,7 @@ export const Footer = (props) => {
  )
 }
 
+
+const changeBackground = (backgroundRef, e) => {
+ let targetClass = e.target.className
+}
