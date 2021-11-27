@@ -6,11 +6,12 @@ import { createRef } from 'react'
 export let titleRef = createRef('')
 export const Header = (props) => {
 
-
  return (
   <header className="header">
-      <div className="header__logo">
-        <img src={logo}></img>
+      <div className="header__logowrapper">
+        <div className="header__logo">
+            <img src={logo}></img>
+        </div>
         <h2 ref={titleRef} className="header__title"></h2>
       </div>
       <div className="header__qr"><img src={qr}></img></div>
