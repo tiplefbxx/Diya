@@ -13,7 +13,7 @@ import { titleRef } from "../../header/header"
  }, [])
 
 
- return <Documents />
+ return <Documents appBodyRef={props.appBodyRef} />
 }
 
 
