@@ -1,9 +1,11 @@
 import './idcard.scss'
 import idImg from '../../../../texure/menu/twoBlocks.png'
+import { createRef } from 'react'
 
 export const Idcard = (props) => {
+    let cardRef = createRef('')
  return (
-          <div className="card idcard">
+          <div className="card idcard" ref={cardRef}>
              <div className="idcard__wrapper">
                  <div className="idcard__top">
                    <h2 className="idcard__title">Картка платника податків</h2>
@@ -27,3 +29,8 @@ export const Idcard = (props) => {
         )
 }
 
+
+
+const resizeCard = () => {
+    
+}

@@ -2,10 +2,35 @@
 background: #e2ecf4;
 margin:10px 0 0 0;
 height:120%;
+cursor:default;
+
   &__top {
    height:90px;
    padding:0 23px;
    border-bottom: 2.5px solid #d3e4ef;
+   position:relative;
+  }
+  
+  &__mode {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   position:absolute;
+   right:6%;
+   font-size:12px;
+   top:11%; 
+   cursor:pointer;
+   color:rgb(136,163,186);
+    & div {
+        width:25px;
+        height:25px;
+    }
+
+    & img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
   }
 
   &__title {
@@ -68,6 +93,27 @@ height:120%;
     }
   }
     
+   &__blocks {
+       display:flex;
+       flex-wrap:wrap;
+  
+
+       & li {
+           width:49.5%;
+           font-size:13px;
+       }
+
+       & li:nth-child(2n){
+           border-left:2.5px solid #d3e4ef;
+       }
+
+       & span:nth-child(1){
+           width:21px;
+           height:21px;
+           top:13px;
+           left:5px;
+       }
+   }
 }
 
 

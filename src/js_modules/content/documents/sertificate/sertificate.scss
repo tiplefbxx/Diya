@@ -10,7 +10,7 @@ background: #e7f5e5;
       row-gap:25px;
       align-items:center;
       padding:0 0 65px 0;
-      border-bottom:2.5px solid #94ce79;
+      border-bottom:2.5px solid rgb(191,236,180);
 
   }
 
@@ -38,6 +38,7 @@ background: #e7f5e5;
       font-size:12px;
       letter-spacing:0.5px;
   }
+
   &__bottom {
    padding: 20px 0 0 0;
    display:flex;
@@ -46,6 +47,7 @@ background: #e7f5e5;
    row-gap:15px;
    justify-content: center;
   }
+
   &__button {
      border-radius:50%;
      border:1.5px solid#000;
