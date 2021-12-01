@@ -1,5 +1,7 @@
 import './passport.scss'
 import img from '../../../../texure/testimg.jpg'
+import { DocumentMenu } from '../document_menu/document_menu'
+import { NavLink } from 'react-router-dom'
 
 export const Passport = (props) => {
 
@@ -24,6 +26,7 @@ export const Passport = (props) => {
                  </div>
                  <div className="passport__bottom">
                      <div className="passport__name">Олександр <br/>Корніленко <br/> Петрович</div>
+                     <NavLink to={'passportmenu'} className="passport__button"><span>...</span></NavLink>
                  </div>
              </div>
           </div>

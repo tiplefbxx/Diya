@@ -65,6 +65,30 @@
    font-weight:500;
    color: rgba(0,0,0, 0.8);
    line-height:24px;
+   position:relative;
+  }
+
+  &__button {
+    width:18px;
+    height:18px;
+    border:2px solid#000;
+    border-radius:50%;
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    right:0;
+    bottom:3px;
+    cursor:pointer;
+
+    & span {
+      line-height:0px;
+      font-size:19px;
+      position:relative;
+      width:16px;
+      height:10px;
+      display:block;
+    }
   }
 }
 
@@ -75,6 +99,7 @@
   justify-content: center;
   height:100%;
   background:rgb(176,198,231);
+  position:relative;
 }
 
 .idcard__background {
@@ -83,4 +108,5 @@
   justify-content: center;
   height:100%;
   background:rgb(222,199,216);
+  position:relative;
 }
