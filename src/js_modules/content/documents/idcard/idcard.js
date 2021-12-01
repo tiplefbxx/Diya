@@ -5,7 +5,9 @@ import { createRef } from 'react'
 export const Idcard = (props) => {
     let cardRef = createRef('')
  return (
-          <div className="card idcard" ref={cardRef}>
+ <div className="card undercard__idcard">
+     <div className="card__front">
+          <div className="idcard" ref={cardRef}>
              <div className="idcard__wrapper">
                  <div className="idcard__top">
                    <h2 className="idcard__title">Картка платника податків</h2>
@@ -26,7 +28,10 @@ export const Idcard = (props) => {
                  </div>
              </div>
           </div>
-        )
+        </div>
+        <div className="card__back idcard__back"></div>
+    </div>
+    )
 }
 
 

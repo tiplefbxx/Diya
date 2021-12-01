@@ -1,12 +1,22 @@
 
 .idcard {
 background:rgb(239,227,236);
+height:100%;
+
+    &__front {
+
+    }
+
+    &__back {
+       background:rgb(239,227,236);
+    }
+
     &__wrapper {
-    padding: 20px 0 0 0;
+       padding: 20px 0 0 0;
     }
 
     &__top {
-    padding:0 0 0 20px;
+       padding:0 0 0 20px;
 
      & p {
         font-weight:500;
@@ -89,3 +99,19 @@ background:rgb(239,227,236);
         left:-140%;
     }
 }
+
+
+.undercard__idcard {
+    background:rgb(222,199,216);
+}
+
+
+.idcard__background {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height:100%;
+    background:rgb(222,199,216);
+    position:relative;
+  }
+  

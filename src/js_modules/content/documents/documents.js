@@ -20,7 +20,6 @@ const setActiveStyle = (current, next) => {
    }
 }
 
-
  let setting = {    
     beforeChange: setActiveStyle,
     onSwipe: () => console.log('swipe'),

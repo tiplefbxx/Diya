@@ -31,6 +31,7 @@ position:relative;
 perspective: 1000px;
 
 
+
  &__front {
   height:100%;
   position:absolute;
@@ -38,9 +39,10 @@ perspective: 1000px;
   height:100%;
   top:0;
   left:0;
-  transition-duration:0.9s;
+  transition-duration:0.6s;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
+  transition-delay: 0.2s;
  }
 
  &__back {
@@ -51,18 +53,29 @@ perspective: 1000px;
   left:0;
   background: red;
   transform:rotateY(180deg);
-  transition-duration:0.9s;
+  transition-duration:0.6s;
+  transition-delay: 0.2s;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
  }
 
  &:hover &__front {
-   transform:rotateY(180deg);
+   transform:rotateY(180deg) ;
  }
+
  &:hover &__back {
-  transform:rotateY(360deg);
+  transform:rotateY(360deg) ;
+ }
+
+ &:hover {
+  transform:scale(0.8);
+ }
 }
-}
+
+
+
+
+
 .card__active {
 transform:unset;
 transition-duration: 0.4s;

@@ -33,7 +33,7 @@ export const Passport = (props) => {
              </div>
              </div>
           </div>
-          <div className="card__back">back</div>
+          <div className="card__back passport__back">back</div>
         </div> )
 }
 
