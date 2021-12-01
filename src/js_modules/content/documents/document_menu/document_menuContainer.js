@@ -10,6 +10,7 @@ const [menuStyle, setMenuStyle] = useState('')
 
 useEffect( () => {
  setMenuStyle('active')
+
 }, [])
 
  return <DocumentMenu  {...props} menuStyle={menuStyle}/>

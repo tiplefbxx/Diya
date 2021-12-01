@@ -6,7 +6,9 @@ import { NavLink } from 'react-router-dom'
 export const Passport = (props) => {
 
  return (
-          <div className="card passport">
+      <div className="card undercard__passport">
+          <div className="card__front">
+          <div className="passport">
              <div className="passport__wrapper">
                  <div className="passport__top">
                      <h2 className="passport__title">Паспорт громадянина України</h2>
@@ -29,7 +31,9 @@ export const Passport = (props) => {
                      <NavLink to={'passportmenu'} className="passport__button"><span>...</span></NavLink>
                  </div>
              </div>
+             </div>
           </div>
-           )
+          <div className="card__back">back</div>
+        </div> )
 }
 

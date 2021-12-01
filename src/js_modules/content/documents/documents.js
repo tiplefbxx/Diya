@@ -12,7 +12,6 @@ export const Documents = (props) => {
 
 
 const setActiveStyle = (current, next) => {
-    console.log(next)
    switch (next) {
        case 0: return props.appBodyRef.current.className = "documents__background"
        case 1: return props.appBodyRef.current.className = "passport__background"
