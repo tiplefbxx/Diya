@@ -2,6 +2,7 @@ import './passport.scss'
 import img from '../../../../texure/testimg.jpg'
 import { DocumentMenu } from '../document_menu/document_menu'
 import { NavLink } from 'react-router-dom'
+import { PassportBack } from './passport_back'
 
 export const Passport = (props) => {
 
@@ -33,7 +34,7 @@ export const Passport = (props) => {
              </div>
              </div>
           </div>
-          <div className="card__back passport__back">back</div>
+          <PassportBack qrCode={props.qrCode} />
         </div> )
 }
 

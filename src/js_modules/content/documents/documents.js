@@ -1,7 +1,7 @@
 import Slider from 'react-slick'
 import './documents.scss'
 import { Sertificate } from './sertificate/sertificate'
-import { Passport } from './passport/passport'
+import  PassportContainer  from './passport/passportContainer'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Idcard } from './idcard/idcard';
@@ -41,9 +41,8 @@ const setActiveStyle = (current, next) => {
   <div className="documents" id="fullpage-wrapper">
       <Slider className="documents__line" {...setting}>
           <div><Sertificate /></div>
-          <div><Passport /></div>
+          <div><PassportContainer /></div>
           <div><Idcard /></div>
-          <div><Passport /></div>
       </Slider>
   </div>
  )
