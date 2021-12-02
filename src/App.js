@@ -8,7 +8,7 @@ import store from './state/store';
 function App() {
 
   return (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
      <div className="App">
        <div className="app__container">
