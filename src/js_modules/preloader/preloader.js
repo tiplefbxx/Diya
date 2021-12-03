@@ -13,9 +13,11 @@ useEffect( () => {
 
     return (
         <div className="preloader" ref={preloaderRef}>
-           <div className="preloader__textwrapper" ><h2>Міністерство <br/> цифрової трансформації <br/> України </h2></div>   
            <div className="preloader__logo"><img src={logo}></img></div>
-           <div className="preloader__arms"><img src={arms}></img></div>
+           <div className="preloader__arms">
+               <img src={arms}></img>
+               <div className="preloader__textwrapper" ><h2>Міністерство <br/> цифрової трансформації <br/> України </h2></div>   
+               </div>
         </div>
     )
 }
@@ -24,10 +26,6 @@ useEffect( () => {
 
 
 let changeBackground = (preloaderRef) => {
-   setTimeout(() => {
-       preloaderRef.current.classList.add('preloader__background-phase1')
-   }, 0);
-
    setTimeout(() => {
     preloaderRef.current.classList.add('preloader__background-phase2')
    }, 1000);

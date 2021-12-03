@@ -50,18 +50,13 @@ background: linear-gradient(165deg, rgba(151,219,234,1) 0%, rgba(225,183,220,1) 
   }
 
   &__textwrapper {
-      width:50%;
+      width:500%;
       height:100%;
       z-index:-1;
       position:absolute;
-      left:50%;
+      top:0;
+      left:113%;
       overflow:hidden;
-
-      animation-name: textWrapperToLeft;
-      animation-duration: 0.9s;
-      animation-delay: 2.4s;
-      animation-fill-mode:forwards;
-      
 
       & h2 {
           font-weight:500;
@@ -74,7 +69,7 @@ background: linear-gradient(165deg, rgba(151,219,234,1) 0%, rgba(225,183,220,1) 
           z-index:-1;
           
           animation-name: showText;
-          animation-duration: 0.9s;
+          animation-duration: 0.8s;
           animation-delay: 2.1s;
           animation-fill-mode:forwards;
           animation-timing-function: linear;
@@ -138,43 +133,17 @@ background: linear-gradient(165deg, rgba(151,219,234,1) 0%, rgba(225,183,220,1) 
     }
 }
 
-@keyframes textWrapperToLeft {
-    0% {
-       left:50%;
-    }
-    100% { 
-       left:41%;
-    }
-}
 
-@keyframes changeBackgroundPhase1 {
-    0% {
-        background: linear-gradient(165deg, rgba(151,219,234,1) 0%, rgba(225,183,220,1) 100%);
-        transition-duration:0.3s;
-    }
-    100% {
-        background: linear-gradient(159deg, rgba(187,198,239,1) 0%, rgba(243,211,209,1) 99%);
-        transition-duration:0.3s;
-    }
-}
 
-@keyframes changeBackgroundPhase2 {
-    0% {
-        background: linear-gradient(159deg, rgba(187,198,239,1) 0%, rgba(243,211,209,1) 99%);
-    }
-    100% {
-        background: linear-gradient(170deg, rgba(209,211,234,1) 0%, rgba(240,220,211,1) 100%);
-    }
-}
 
 
 .preloader__background-phase1 {
-    background: linear-gradient(159deg, rgba(187,198,239,1) 0%, rgba(243,211,209,1) 99%);
+    background: linear-gradient(165deg, rgba(151,219,234,1) 0%, rgba(225,183,220,1) 100%);
     transition-duration:0.3s;
 }
 
 .preloader__background-phase2 {
-    background: linear-gradient(170deg, rgba(209,211,234,1) 0%, rgba(240,220,211,1) 100%);
+    background: linear-gradient(159deg, rgba(187,198,239,1) 0%, rgba(243,211,209,1) 99%);
     transition-duration:2s;
 }
 
