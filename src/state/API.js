@@ -17,7 +17,7 @@ export const API = {
       // here must be request to the server 
       let promise = new Promise( (resolve, reject) => {
          let number = getBarcodeNumber()  // create rendom number
-         return resolve([barcode, number] )
+         return resolve([barcode, number])
       })
    
    
