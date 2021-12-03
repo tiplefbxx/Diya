@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/copypaste-diya/static/css/main.d3b5d1e5.chunk.css",
-    "main.js": "/copypaste-diya/static/js/main.56ac45ba.chunk.js",
-    "main.js.map": "/copypaste-diya/static/js/main.56ac45ba.chunk.js.map",
+    "main.css": "/copypaste-diya/static/css/main.fe6b9175.chunk.css",
+    "main.js": "/copypaste-diya/static/js/main.c46ce5c4.chunk.js",
+    "main.js.map": "/copypaste-diya/static/js/main.c46ce5c4.chunk.js.map",
     "runtime-main.js": "/copypaste-diya/static/js/runtime-main.d4c84684.js",
     "runtime-main.js.map": "/copypaste-diya/static/js/runtime-main.d4c84684.js.map",
     "static/css/2.ae9cfb46.chunk.css": "/copypaste-diya/static/css/2.ae9cfb46.chunk.css",
-    "static/js/2.b51ae329.chunk.js": "/copypaste-diya/static/js/2.b51ae329.chunk.js",
-    "static/js/2.b51ae329.chunk.js.map": "/copypaste-diya/static/js/2.b51ae329.chunk.js.map",
+    "static/js/2.bb6790eb.chunk.js": "/copypaste-diya/static/js/2.bb6790eb.chunk.js",
+    "static/js/2.bb6790eb.chunk.js.map": "/copypaste-diya/static/js/2.bb6790eb.chunk.js.map",
     "static/js/3.8efaf7fa.chunk.js": "/copypaste-diya/static/js/3.8efaf7fa.chunk.js",
     "static/js/3.8efaf7fa.chunk.js.map": "/copypaste-diya/static/js/3.8efaf7fa.chunk.js.map",
     "index.html": "/copypaste-diya/index.html",
     "static/css/2.ae9cfb46.chunk.css.map": "/copypaste-diya/static/css/2.ae9cfb46.chunk.css.map",
-    "static/css/main.d3b5d1e5.chunk.css.map": "/copypaste-diya/static/css/main.d3b5d1e5.chunk.css.map",
-    "static/js/2.b51ae329.chunk.js.LICENSE.txt": "/copypaste-diya/static/js/2.b51ae329.chunk.js.LICENSE.txt",
+    "static/css/main.fe6b9175.chunk.css.map": "/copypaste-diya/static/css/main.fe6b9175.chunk.css.map",
+    "static/js/2.bb6790eb.chunk.js.LICENSE.txt": "/copypaste-diya/static/js/2.bb6790eb.chunk.js.LICENSE.txt",
     "static/media/arms.3e6d605c.png": "/copypaste-diya/static/media/arms.3e6d605c.png",
     "static/media/defaultQr.ec7b1e4b.png": "/copypaste-diya/static/media/defaultQr.ec7b1e4b.png",
     "static/media/logo.6b59cb87.png": "/copypaste-diya/static/media/logo.6b59cb87.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.d4c84684.js",
     "static/css/2.ae9cfb46.chunk.css",
-    "static/js/2.b51ae329.chunk.js",
-    "static/css/main.d3b5d1e5.chunk.css",
-    "static/js/main.56ac45ba.chunk.js"
+    "static/js/2.bb6790eb.chunk.js",
+    "static/css/main.fe6b9175.chunk.css",
+    "static/js/main.c46ce5c4.chunk.js"
   ]
 }
