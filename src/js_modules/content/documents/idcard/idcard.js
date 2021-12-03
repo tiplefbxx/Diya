@@ -1,9 +1,11 @@
 import './idcard.scss'
 import idImg from '../../../../texure/menu/twoBlocks.png'
 import { createRef } from 'react'
+import { IdCardBack } from './idcard_back'
 
 export const Idcard = (props) => {
     let cardRef = createRef('')
+
  return (
  <div className="card undercard__idcard">
      <div className="card__front">
@@ -29,13 +31,8 @@ export const Idcard = (props) => {
              </div>
           </div>
         </div>
-        <div className="card__back idcard__back"></div>
+        <IdCardBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} />
     </div>
     )
 }
 
-
-
-const resizeCard = () => {
-    
-}

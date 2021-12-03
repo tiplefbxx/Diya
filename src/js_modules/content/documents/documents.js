@@ -4,7 +4,7 @@ import { Sertificate } from './sertificate/sertificate'
 import  PassportContainer  from './passport/passportContainer'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Idcard } from './idcard/idcard';
+import  IdcardContainer  from './idcard/idcardContainer';
 
 
 
@@ -42,7 +42,7 @@ const setActiveStyle = (current, next) => {
       <Slider className="documents__line" {...setting}>
           <div><Sertificate /></div>
           <div><PassportContainer /></div>
-          <div><Idcard /></div>
+          <div><IdcardContainer /></div>
       </Slider>
   </div>
  )
