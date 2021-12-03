@@ -43,6 +43,8 @@ perspective: 1000px;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
   transition-delay: 0.2s;
+  overflow:hidden;
+  border-radius:7px;
  }
 
  &__back {
@@ -57,6 +59,8 @@ perspective: 1000px;
   transition-delay: 0.2s;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
+  overflow:hidden;
+  border-radius:7px;
  }
 
  &:hover &__front {

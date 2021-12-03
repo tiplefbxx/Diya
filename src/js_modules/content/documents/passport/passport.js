@@ -34,7 +34,7 @@ export const Passport = (props) => {
              </div>
              </div>
           </div>
-          <PassportBack qrCode={props.qrCode} />
+          <PassportBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} />
         </div> )
 }
 

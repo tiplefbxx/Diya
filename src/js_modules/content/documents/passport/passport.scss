@@ -6,10 +6,6 @@
 
   }
 
-  &__back {
-    background:#d7e3f2;
-  }
-
   &__wrapper {
     padding:20px 20px 0 20px;
   }
@@ -99,6 +95,55 @@
     }
   }
 }
+
+
+.passportback {
+  background:#d7e3f2;
+  &__content {
+   height:100%;
+  }
+
+  &__icons {
+    display:flex;
+    justify-content:space-between;
+    width:60%;
+    position:absolute;
+    bottom:2%;
+    left:50%;
+    transform:translateX(-50%);
+    
+  }
+
+  &__icon {
+    width:70px;
+    height:70px; 
+    font-size:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    
+    & img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+  }
+
+  &__imgwrapper {
+    width:40px;
+    height:40px; 
+    cursor:pointer;
+  }
+
+  & p {
+    padding: 7px 0 0 0;
+    font-weight:500;
+  }
+}
+
+
 
 
 

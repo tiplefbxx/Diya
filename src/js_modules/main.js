@@ -9,7 +9,7 @@ import { DocumentMenuContainer } from './content/documents/document_menu/documen
 let appBodyRef = createRef()
 export const Main = (props) => {
  return (
- <div ref={appBodyRef} className="main__wrapper">
+ <div ref={appBodyRef} className='main__wrapper'>
     <Header />
     <Content appBodyRef={appBodyRef}/>
     <Footer />
@@ -19,4 +19,3 @@ export const Main = (props) => {
     </Routes>
  </div>)
 }
-

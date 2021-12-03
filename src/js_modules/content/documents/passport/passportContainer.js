@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { getQrCodeThunk } from '../../../../state/qr__reducer'
+import { getQrCodeThunk } from '../../../../state/qr_reducer'
+import { getBarcodeThunk } from '../../../../state/barcode_reducer'
 import { Passport } from './passport'
 
 
@@ -8,6 +9,7 @@ import { Passport } from './passport'
 
   useEffect( () => {
     props.getQrCodeThunk()
+    props.getBarcodeThunk()
   }, [])
 
  return <Passport {...props}/>
@@ -18,11 +20,14 @@ import { Passport } from './passport'
 let mapStateToProps = (state) => {
  return {
      qrCode: state.qrCode.qrCode,
+     barcode: state.barcode.barcode,
+     barcodeNumber: state.barcode.barcodeNumber,
  }
 }
 
 let mapDispatchToProps = {
    getQrCodeThunk,
+   getBarcodeThunk,
 }
 
 
