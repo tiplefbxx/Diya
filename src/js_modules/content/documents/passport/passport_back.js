@@ -12,6 +12,17 @@ export const PassportBack = (props) => {
 let [mode, setMode] = useState('qr')
 let activeStyle = props.cardStatus? 'card__back-turned' : ' '
 
+let setQrMode = (e) => {
+    setMode('qr')
+    e.stopPropagation()
+}
+
+let setBarMode = (e) => {
+    setMode('barcode')
+    e.stopPropagation()
+}
+
+
  return (
       <div className={'card__back passportback' + ' ' + activeStyle} onClick={ () => props.setCardStatus(false)}>
           <div className='passportback__content'>
@@ -19,11 +30,11 @@ let activeStyle = props.cardStatus? 'card__back-turned' : ' '
           </div>
           <div className='passportback__icons'>
               <div className="passportback__icon">
-                  <div className="passportback__imgwrapper" onClick={ () => setMode('qr')}><img src={mode === 'qr'? qrButtonActive : qrButtonPassive } alt=""></img></div>
+                  <div className="passportback__imgwrapper" onClick={ (e) => setQrMode(e)}><img src={mode === 'qr'? qrButtonActive : qrButtonPassive } alt=""></img></div>
                   <p>QR-код</p>
                   </div>
               <div className="passportback__icon">
-                  <div className="passportback__imgwrapper" onClick={ () => setMode('barcode')}><img src={mode === 'barcode'? barcodeButtonActive : barcodeButtonPassive} alt=""></img></div>
+                  <div className="passportback__imgwrapper" onClick={ (e) => setBarMode(e)}><img src={mode === 'barcode'? barcodeButtonActive : barcodeButtonPassive} alt=""></img></div>
                   <p>Штрих-код</p>
                   </div>
           </div>
