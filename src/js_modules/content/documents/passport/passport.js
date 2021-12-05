@@ -1,14 +1,17 @@
 import './passport.scss'
 import img from '../../../../texure/testimg.jpg'
-import { DocumentMenu } from '../document_menu/document_menu'
 import { NavLink } from 'react-router-dom'
 import { PassportBack } from './passport_back'
+import { useState } from 'react'
 
 export const Passport = (props) => {
+let [cardStatus, setCardStatus] = useState(false)
+let activeStyle = cardStatus? "card__front-turned" : null
+
 
  return (
-      <div className="card undercard__passport">
-          <div className="card__front">
+      <div className={"card undercard__passport"}>
+          <div className={"card__front" + ' ' + activeStyle} onClick={ () => setCardStatus(true)}>
           <div className="passport">
              <div className="passport__wrapper">
                  <div className="passport__top">
@@ -29,12 +32,12 @@ export const Passport = (props) => {
                  </div>
                  <div className="passport__bottom">
                      <div className="passport__name">Олександр <br/>Корніленко <br/> Петрович</div>
-                     <NavLink to={'passportmenu'} className="passport__button"><span>...</span></NavLink>
+                     <NavLink to={'passportmenu'} onClick={(event) => event.stopPropagation()} className="passport__button"><span>...</span></NavLink>
                  </div>
              </div>
              </div>
           </div>
-          <PassportBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} />
+          <PassportBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} cardStatus={cardStatus} setCardStatus={setCardStatus} />
         </div> )
 }
 

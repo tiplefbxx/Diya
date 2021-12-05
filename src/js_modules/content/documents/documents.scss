@@ -42,7 +42,6 @@ perspective: 1000px;
   transition-duration:0.6s;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
-  transition-delay: 0.2s;
   overflow:hidden;
   border-radius:7px;
  }
@@ -56,27 +55,22 @@ perspective: 1000px;
   background: red;
   transform:rotateY(180deg);
   transition-duration:0.6s;
-  transition-delay: 0.2s;
   backface-visibility: hidden;
   box-shadow:2px 3px 10px rgba(0,0,0, 0.2);
   overflow:hidden;
   border-radius:7px;
  }
 
- &:hover &__front {
-   transform:rotateY(180deg) ;
- }
-
- &:hover &__back {
-  transform:rotateY(360deg) ;
- }
-
- &:hover {
-  transform:scale(0.8);
- }
 }
 
 
+
+.card__front-turned {
+  transform:rotateY(180deg);
+}
+.card__back-turned {
+  transform:rotateY(360deg)
+}
 
 
 

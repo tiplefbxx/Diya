@@ -70,6 +70,11 @@
    color: rgba(0,0,0, 0.8);
    line-height:24px;
    position:relative;
+
+   & a  {
+    color:black;
+   }
+
   }
 
   &__button {
@@ -84,6 +89,7 @@
     right:0;
     bottom:3px;
     cursor:pointer;
+
 
     & span {
       line-height:0px;

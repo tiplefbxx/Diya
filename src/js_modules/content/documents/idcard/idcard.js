@@ -1,15 +1,18 @@
 import './idcard.scss'
 import idImg from '../../../../texure/menu/twoBlocks.png'
-import { createRef } from 'react'
+import { createRef, useState } from 'react'
 import { IdCardBack } from './idcard_back'
 
 export const Idcard = (props) => {
-    let cardRef = createRef('')
+let cardRef = createRef('')
+let [cardStatus, setCardStatus] = useState(false)
+let activeStyle = cardStatus? "card__front-turned" : null
+
 
  return (
- <div className="card undercard__idcard">
-     <div className="card__front">
-          <div className="idcard" ref={cardRef}>
+ <div className={"card undercard__idcard"} >
+     <div className={"card__front" + " " + activeStyle}>
+          <div className="idcard" ref={cardRef} onClick={ () => setCardStatus(true)}>
              <div className="idcard__wrapper">
                  <div className="idcard__top">
                    <h2 className="idcard__title">Картка платника податків</h2>
@@ -31,7 +34,7 @@ export const Idcard = (props) => {
              </div>
           </div>
         </div>
-        <IdCardBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} />
+        <IdCardBack qrCode={props.qrCode} barcode={props.barcode} barcodeNumber={props.barcodeNumber} cardStatus={cardStatus} setCardStatus={setCardStatus}/>
     </div>
     )
 }

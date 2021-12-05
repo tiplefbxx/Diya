@@ -10,10 +10,10 @@ import { QrCode } from '../passport/qr/qr_code'
 
 export const IdCardBack = (props) => {
 let [mode, setMode] = useState('qr')
-
+let activeStyle = props.cardStatus? 'card__back-turned' : ' '
 
  return (
-      <div className='card__back idcardBack'>
+      <div className={'card__back idcardBack' + ' ' + activeStyle} onClick={ () => props.setCardStatus(false)}>
           <div className='idcardBack__content'>
           {mode === 'qr'? <QrCode qrCode={props.qrCode} /> : <Barcode barcode={props.barcode} barcodeNumber={props.barcodeNumber} />}
           </div>

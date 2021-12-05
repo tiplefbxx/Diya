@@ -15,9 +15,7 @@ export const Main = (props) => {
     <Header />
     <Content appBodyRef={appBodyRef}/>
     <Footer />
-
     <Preloader />
-    
     <Routes>
       <Route path={'/passportmenu'} element = { <DocumentMenuContainer />}></Route>
     </Routes>

@@ -1,7 +1,7 @@
 {
   "name": "diya",
   "version": "0.1.0",
-  "homepage": "https://tiplefbxx.github.io/copypaste-diya",
+  "homepage": "https://github.com/tiplefbxx/Diya",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",

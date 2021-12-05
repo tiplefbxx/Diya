@@ -6,14 +6,14 @@ import qrButtonActive from '../../../../texure/qr/qr_mode_active.png'
 import barcodeButtonPassive from '../../../../texure/qr/barcode_mode_passive.png'
 import barcodeButtonActive from '../../../../texure/qr/barcode_mode_active.png'
 import { Barcode } from './barcode/barcode'
-import { barcode } from '../../../../state/barcode_reducer'
+
 
 export const PassportBack = (props) => {
 let [mode, setMode] = useState('qr')
-
+let activeStyle = props.cardStatus? 'card__back-turned' : ' '
 
  return (
-      <div className='card__back passportback'>
+      <div className={'card__back passportback' + ' ' + activeStyle} onClick={ () => props.setCardStatus(false)}>
           <div className='passportback__content'>
           {mode === 'qr'? <QrCode qrCode={props.qrCode} /> : <Barcode barcode={props.barcode} barcodeNumber={props.barcodeNumber} />}
           </div>
